@@ -1,0 +1,31 @@
+@use 'global' as *;
+
+.c-section-header {
+  color: $blue;
+  text-align: center;
+}
+
+.c-section-header__title {
+  font-family: $en-font-family;
+  font-size: rem(30);
+  font-weight: $bold;
+  letter-spacing: .05em;
+  line-height: calc(37/30);
+  text-transform: uppercase;
+  line-height: 1;
+  @include mq(md) {
+    font-size: rem(36);
+  }
+}
+
+.c-section-header__sub-title {
+  font-family: $en-font-family;
+  font-size: rem(13);
+  font-weight: $bold;
+  letter-spacing: .05em;
+  line-height: calc(32/13);
+  text-transform: uppercase;
+  @include mq(md) {
+    font-size: rem(14);
+  }
+}
